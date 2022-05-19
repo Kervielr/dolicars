@@ -113,6 +113,9 @@ class Cars extends CommonObject
 		'import_key' => array('type'=>'varchar(14)', 'label'=>'ImportId', 'enabled'=>'1', 'position'=>1000, 'notnull'=>-1, 'visible'=>-2,),
 		'status' => array('type'=>'integer', 'label'=>'Status', 'enabled'=>'1', 'position'=>1000, 'notnull'=>1, 'visible'=>1, 'index'=>1, 'arrayofkeyval'=>array('0'=>'Brouillon', '1'=>'Valid&eacute;', '9'=>'Annul&eacute;'), 'validate'=>'1',),
 		'last_main_doc' => array('type'=>'varchar(255)', 'label'=>'LasrMainDoc', 'enabled'=>'1', 'position'=>50, 'notnull'=>0, 'visible'=>-1, 'default'=>'600', 'index'=>1,),
+		'power' => array('type'=>'double(24,8)', 'label'=>'Power', 'enabled'=>'1', 'position'=>70, 'notnull'=>0, 'visible'=>1,),
+		'sportmode' => array('type'=>'boolean', 'label'=>'SportMode', 'enabled'=>'1', 'position'=>80, 'notnull'=>0, 'visible'=>1,),
+		'circulationdate' => array('type'=>'datetime', 'label'=>'circulationdate', 'enabled'=>'1', 'position'=>50, 'notnull'=>0, 'visible'=>1,),
 	);
 	public $rowid;
 	public $ref;
@@ -125,6 +128,9 @@ class Cars extends CommonObject
 	public $import_key;
 	public $status;
 	public $last_main_doc;
+	public $power;
+	public $sportmode;
+	public $circulationdate;
 	// END MODULEBUILDER PROPERTIES
 
 
