@@ -26,6 +26,9 @@ CREATE TABLE llx_dolicars_cars(
 	fk_user_modif integer, 
 	import_key varchar(14), 
 	status integer NOT NULL, 
-	last_main_doc varchar(255) DEFAULT '600'
+	last_main_doc varchar(255) DEFAULT '600', 
+	power double(24,8), 
+	sportmode boolean, 
+	circulationdate datetime
 	-- END MODULEBUILDER FIELDS
 ) ENGINE=innodb;
